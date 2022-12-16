@@ -10,6 +10,9 @@
 
             Console.WriteLine("Registration of First name");
             patternCheck.FirstNameCheck();
+
+            Console.WriteLine("Registration of Last name");
+            patternCheck.LastNameCheck();
         }
     }
 }
