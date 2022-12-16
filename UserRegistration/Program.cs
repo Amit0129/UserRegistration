@@ -16,6 +16,9 @@
 
             Console.WriteLine("Registration of Email Id");
             patternCheck.EmailCheck();
+
+            Console.WriteLine("Registration of Mobile Number");
+            patternCheck.MobileNumberCheck();
         }
     }
 }

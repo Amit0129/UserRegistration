@@ -77,6 +77,27 @@ namespace UserRegistration
             }
         }
 
+        public void MobileNumberCheck()
+        {
+            bool check = true;
+            while (check)
+            {
+                Console.WriteLine("Enter Mobile Number");
+                string mobileNumber = Console.ReadLine();
+                string mobNumberPattern = "^[0-9]{2}[ ][6-9][0-9]{9}$";
+                if (Validater(mobileNumber, mobNumberPattern))
+                {
+                    Console.WriteLine($"The Mobile Number is {mobileNumber}");
+                    check = false;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Enter a valid Mobile Number");
+                }
+            }
+        }
+
 
     }
 }
