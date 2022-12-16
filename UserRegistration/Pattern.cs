@@ -98,6 +98,27 @@ namespace UserRegistration
             }
         }
 
+        public void PasswordCheck()
+        {
+            bool check = true;
+            while (check)
+            {
+                Console.WriteLine("Enter Password");
+                string password = Console.ReadLine();
+                string passwordPattern = "^[A-Za-z0-9!@#$%_]{8,}$";
+                if (Validater(password, passwordPattern))
+                {
+                    Console.WriteLine($"The passwoed is {password}");
+                    check = false;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Enter a valid Password that have minimum 8 Characters and Atlist one upper case Chareacter");
+                }
+            }
+        }
+
 
     }
 }

@@ -19,6 +19,9 @@
 
             Console.WriteLine("Registration of Mobile Number");
             patternCheck.MobileNumberCheck();
+
+            Console.WriteLine("Registration of Password");
+            patternCheck.PasswordCheck();
         }
     }
 }
