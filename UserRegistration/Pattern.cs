@@ -105,7 +105,7 @@ namespace UserRegistration
             {
                 Console.WriteLine("Enter Password");
                 string password = Console.ReadLine();
-                string passwordPattern = "^[A-Za-z0-9!@#$%_]{8,}$";
+                string passwordPattern = "^(?=.*[A-Z])[A-Za-z0-9!@#$%_]{8,}$";
                 if (Validater(password, passwordPattern))
                 {
                     Console.WriteLine($"The passwoed is {password}");
