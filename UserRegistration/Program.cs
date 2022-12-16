@@ -13,6 +13,9 @@
 
             Console.WriteLine("Registration of Last name");
             patternCheck.LastNameCheck();
+
+            Console.WriteLine("Registration of Email Id");
+            patternCheck.EmailCheck();
         }
     }
 }

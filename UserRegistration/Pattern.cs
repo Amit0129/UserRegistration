@@ -55,6 +55,28 @@ namespace UserRegistration
             }
         }
 
+        public void EmailCheck()
+        {
+            bool check = true;
+            while (check)
+            {
+                Console.WriteLine("Enter your Mail Id");
+                string emailId = Console.ReadLine();
+                
+                string emailIdPattern = @"^[a-zA-Z0-9]+([._+-][0-9a-zA-Z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,3}([.][a-zA-Z]{2,3})?$";
+                if (Validater(emailId, emailIdPattern))
+                {
+                    Console.WriteLine($"The Email id is valid");
+                    check = false;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Enter a valid Email Id");
+                }
+            }
+        }
+
 
     }
 }
